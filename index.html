@@ -2,15 +2,18 @@
 <html>
 <head>
 	<title> Calendar </title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<link rel="stylesheet" href="style.css">
-	<script type="text/javascript" src="script.js"> 
-  </script>
+	<script type="text/javascript" src="script.js"> </script>
 </head>
   
 <body onload="Calendar(dd,mm,yy)">
-  <div class="header" id="month-header"> </div> <br>
-	<div class="container" id="calendar-body">  </div>
-	<br>
+  
+	<div class="header" id="month-header"> </div> <br>
+	<div class="container" id="calendar-body">  </div> <br>
+	
 	<div class="button">
 		<button id="prev" onclick="prev()"> Previous </button>
 		<button id="next" onclick="next()"> Next </button>
