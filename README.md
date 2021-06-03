@@ -1,2 +1,6 @@
-# Calendar
-A simple dynamic calendar using HTML, CSS and JS.
+# Calendar_using_JS
+
+A simple Calendar using HTML, CSS and Javascript.
+
+This dynamic calendar is purely based on Javascript. Using the previous and next buttons, we can view any month of any year. 
+The current date is marked by #00917C background colour.
