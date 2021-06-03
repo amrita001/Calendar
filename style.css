@@ -1,55 +1,143 @@
 @import url("https://fonts.gstatic.com");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 
-	body{
-				background-image: linear-gradient(to bottom right, #A3D2CA 50%, #D6B0B1 50%);
-				height: 91vh;
-				background-repeat: no-repeat;
-				font-size: 22px;
-				margin: 70px 0 0 0;
+		html{
+			height: 100%;
+		}
+		body{
+			background: linear-gradient(to bottom right, #A3D2CA 50%, #D6B0B1 50%);
+			background-color: LightSkyBlue;
+			width: 100vw;
+			background-repeat: no-repeat;
+			font-size: 22px;
+			margin: 70px 0 0 0;
 		}
 		.header{
-				width: 50%;
-				margin-left: auto;
-				margin-right: auto;
-				height: 40px;
-				font-family: 'Roboto Condensed', sans-serif;
-				background-color: yellow;
+			width: 50%;
+			height: 40px;
+			font-family: 'Roboto Condensed', sans-serif;
 		}
+		.header p{
+			font-size: 40px;
+		}
+		.header,.container{
+			margin-left: auto;
+			margin-right: auto;
+		}
+
 		.container{
-				width: 50%;
-				height: 55vh; 
-				margin-left: auto;
-				margin-right: auto;
+			/*border: 2px solid brown;*/
+			width: 50%;
+			height: 55vh; 
+			position: relative;
 		}
 		.container td{
-				border: 1px solid black;
-				width: 10%;
+			border: 1px solid black;
+			border-collapse: collapse;
+			width: 10%;
+			font-size: 25px;
+			padding: 12px;
 		}
 		.button{
-				width: 50%;
-				height: 32px;
-				margin-left: auto;
-				margin-right: auto;
-				font-size: 0;
+			/*border: 2px solid blue;*/
+			width: 50%;
+			height: 32px;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 0;
 		}
 		#prev, #next{
-				height: 100%;
-				width: 50%;
-				border: 1px solid purple;
-				font-size: 20px;
-				cursor: pointer;
-				border-radius: 5px;
+			height: 100%;
+			width: 50%;
+			border: 1px solid purple;
+			font-size: 20px;
+			cursor: pointer;
+			border-radius: 5px;
 		}
 		#prev:hover, #next:hover{
-				background-color: Purple;
-				border-color: white;
-				color: #fff;
+			background-color: Purple;
+			border-color: white;
+			color: #fff;
 		}
 		td:hover{
-				background-color: #21E6C1;
+			background-color: #21E6C1;
 		}
 		button:focus{
-				outline: none;
-				border-radius: 50px;
+			outline: none;
+			border-radius: 50px;
 		}
+		.container table{
+			table-layout: fixed;
+		}
+
+	/*For Tablet screens*/	
+	@media (max-width: 768px){
+		.header{
+			width: 90%;
+			height: 32px;
+			font-size: 38px;
+			text-align: center;
+		}
+		.container{
+			width: 90%;
+			height: 55vh;
+		}
+		.container td span{
+			padding: 0;
+		}
+		.container td{
+			font-size: 30px;
+			width: 12.85%;
+			padding: 10px;
+		}
+		.container table{
+			position: absolute;
+			width: 100%;
+			border-collapse: collapse;
+		}
+		.button{
+			width: 85%;
+			margin: 10px auto 0 auto;
+			height: 40px;
+		}
+		.button button{
+			font-size: 22px;
+		}
+	}
+
+	/*For mobile screens*/
+	@media (max-width: 590px){
+		.header{
+			width: 90%;
+			height: 35px;
+			font-size: 38px;
+			text-align: center;
+			margin-top: 20%;
+		}
+		.container{
+			width: 90%;
+			height: 50vh;
+			position: relative;
+		}
+		table tr:not(:first-child) td{
+			padding-left: 8px;
+		}
+		.container td{
+			font-size: 16px;
+			width: 12.85%;
+		}
+		table tr:first-child td{
+			text-align: center;
+			padding-left: 8px;
+			padding-bottom: 8px;
+			font-size: 16px;
+		}
+	}
+	@media (max-width: 320px){
+		table tr:first-child td{
+			text-align: center;
+			padding-left: 5px;
+			padding-bottom: 10px;
+			font-size: 16px;
+		}
+	}
