@@ -1,7 +1,9 @@
+		
+
 		var date = new Date();
 		var dd = date.getDate();	//Today's date
 		var mm = date.getMonth();	//Current Month
-		var yy = date.getFullYear(); //Current Year
+		var yy = date.getFullYear(); 	//Current Year
 
 		function Calendar(dd,mm,yy)
 		{
@@ -17,7 +19,7 @@
 			
 			var lastDate = lastDay.getDate();	//Extracts only Last date of current month
 
-			var i=1, j = firstDate.getDay(); //j extracts only First Day of current month
+			var i=1, j = firstDate.getDay(); 	//j extracts only First Day of current month
 			var space = j;
 
 
@@ -81,11 +83,13 @@
 			{	yy = yy - 1;
 				mm = 11; // setting array index back to December
 			}
-		else{
+		
+		else	{
 				mm = mm - 1;
 			}
 		Calendar(dd,mm,yy);
 	}
+
 	function next()
 	{
 		if(mm == 11)
